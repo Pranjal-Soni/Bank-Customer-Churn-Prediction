@@ -9,5 +9,14 @@ The dataset is taken from Kaggle(https://www.kaggle.com/adammaus/predicting-chur
 ![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/features_desc.JPG)
 
 ## Exploratory Data Analysis
+Box plots for continous variables on the basis of target attribute.
+![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/feature_target_relation.jpg)
 
-## 
+The distribution of categories for various categorical features.
+![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/categorical_feat_dist.jpg)
+
+The heatmap to visulaise the correlation between numerical vaiables.
+![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/corr.jpg)
+
+
+## Feature Engineering 
