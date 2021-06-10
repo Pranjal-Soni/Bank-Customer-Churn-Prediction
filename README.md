@@ -5,7 +5,7 @@
 
 ## Data
 The dataset is taken from Kaggle(https://www.kaggle.com/adammaus/predicting-churn-for-bank-customers). The dataset has 10,000 records total, and it is a binary classification dataset (either customer will exit from the bank or not). There are 7963 records for customers who do no exit from the bank and 2037 records for the customer who exit from the bank. The features of the dataset are as follows:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/features_desc.JPG)
 
 ## Exploratory Data Analysis
 
