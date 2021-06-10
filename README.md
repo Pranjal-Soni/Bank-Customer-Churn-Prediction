@@ -9,14 +9,19 @@ The dataset is taken from Kaggle(https://www.kaggle.com/adammaus/predicting-chur
 ![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/features_desc.JPG)
 
 ## Exploratory Data Analysis
-Box plots for continous variables on the basis of target attribute.
+Box plots for continous variables on the basis of target attribute :
+
 ![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/feature_target_relation.jpg)
 
-The distribution of categories for various categorical features.
+The distribution of categories for various categorical features :
+
 ![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/categorical_feat_dist.jpg)
 
-The heatmap to visulaise the correlation between numerical vaiables.
+The heatmap to visulaise the correlation between numerical vaiables :
+
 ![Feature Description Image](https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction/blob/main/images/corr.jpg)
 
 
 ## Feature Engineering 
+
+There are too many categorical features like Gender, Geography, HasCard, IsActiveMember etc. So to analyse there effect on the target variable I perfomed chi-square test, and I found that expect HasCard feature all other feature have significat impact on the target variable. So I drop the HasCard feature from the dataset and perform one-hot encoding for all the nominal features. The nurmerical features like Age, CreditScore, etc. are not normally distributed so I take help of power transformer to make them normally distributed. To perform all these operation and aviod data leakage I take help of sklearn pipelines to perform all the feature engineering and training the model.
