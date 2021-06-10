@@ -25,3 +25,18 @@ The heatmap to visulaise the correlation between numerical vaiables :
 ## Feature Engineering 
 
 There are too many categorical features like Gender, Geography, HasCard, IsActiveMember, etc. So to analyse their effect on the target variable, I performed the chi-square test, and I found that expect HasCard feature, all other features have a significant impact on the target variable. So I drop the HasCard feature from the dataset and perform one-hot encoding for all the nominal features. The numerical features like Age, CreditScore, etc., are not normally distributed, so I take the help of a power transformer to make them normally distributed. To perform all these operations and avoid data leakage, I help sklearn pipelines perform all the feature engineering and training models.
+
+## Model Selection And Perfomarmance Matric:
+
+I applied various ML algorithms like Logistic Regression, Support Vector Machine, Random Forest, Adaboost Classifier, XGBoost, Catboost and Balanced Random Forest. To mejor the performance of the machine learning model I choose RECALL score for the customers who Exit from the Bank. The reason behind is that if a model have higher recall, it is able to identify that much churn customers correctly.
+
+## Results of Machine Learning models:
+
+The recall value for class 1 is as follows for vaious machine learning algorithms:
+* Logistic Regression : 0.22
+* Support Vector Classifier : 0.40
+* Random Forest Classifer : 0.44
+* XGBClassifier : 0.50
+* AdaBoost Classifier : 0.48
+* Balanced Random Forest Classifier : 0.75
+
